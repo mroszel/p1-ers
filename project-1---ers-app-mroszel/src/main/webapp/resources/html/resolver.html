@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Reimbursement System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+		<h2>Employee Reimbursement System</h2>
+	</div>
+
+	<select id="myselect" onchange="change_myselect(this.value)">
+		<option value="">Choose an option:</option>
+		<option value="all">All Requests</option>
+		<option value="pending">Pending Requests</option>
+		<option value="approved">Approved Requests</option>
+		<option value="denied">Denied Requests</option>
+	</select>
+
+
+	<div id="sep"></div>
+
+	<table class ="table table-striped table-dark table-hover" id="curReimb">
+		<thead>
+		<tr>
+			<th scope="col">ID</th>
+			<th scope="col">Amount</th>
+			<th scope="col">Time Submitted</th>
+			<th scope="col">Time Resolved</th>
+			<th scope="col">Description</th>
+			<th scope="col">Employee ID</th>
+			<th scope="col">Resolver ID</th>
+			<th scope="col">Status</th>
+			<th scope="col">Type</th>
+		</tr>
+		</thead>
+	</table>
+
+	<form method="post"
+		action="/project-1---ers-app-mroszel/statSubmit.change">
+		<p>Change Status</p>
+		<select id="statselect" name="stattype" required>
+			<option value="">Choose an option:</option>
+			<option value="approve">Approve</option>
+			<option value="deny">Deny</option>
+		</select> 
+		<input type="number" min="0" placeholder="rID" name="rid" required />
+		<input type="submit" value="Submit" />
+	</form>
+
+	<script src="/project-1---ers-app-mroszel/resources/js/rec.js"></script>
+	
+</body>
+</html>
