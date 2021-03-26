@@ -6,14 +6,17 @@ A full-stack java project that facilitates the authoring and resolving of transa
 
 # Features
 • New Users
+
   o	Register as new Employee
 
 •	Employees
+
   o	Login
   o	Add reimbursement request
   o	View past tickets
   
 • Finance Managers
+
   o	Login
   o	View all tickets
   o	Filter tickets by status
