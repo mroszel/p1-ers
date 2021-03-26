@@ -7,23 +7,23 @@ A full-stack java project that facilitates the authoring and resolving of transa
 # Features
 • New Users
 
-    o	Register as new Employee
+    o Register as new Employee
 
 •	Employees
 
-    o	Login
+    o Login
   
-    o	Add reimbursement request
+    o Add reimbursement request
   
-    o	View past tickets
+    o View past tickets
   
 • Finance Managers
 
-    o	Login
+    o Login
   
-    o	View all tickets
+    o View all tickets
   
-    o	Filter tickets by status
+    o Filter tickets by status
   
-    o	Approve/Deny tickets
+    o Approve/Deny tickets
   
